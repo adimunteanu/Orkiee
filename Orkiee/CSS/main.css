@@ -1,0 +1,52 @@
+﻿body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+}
+body .inline {
+  display: inline-block;
+}
+body .right {
+  float: right;
+}
+body .left {
+  float: left;
+}
+body .navigation {
+  background-color: black;
+  height: 120px;
+}
+body .navigation .logo {
+  margin-left: 40px;
+  padding: 20px;
+}
+body .navigation .logo img {
+  height: 66px;
+  width: 128px;
+}
+body .navigation .home {
+  margin-left: -50px;
+  color: white;
+  font-size: 40px;
+  padding: 32px;
+  margin-right: 100px;
+}
+body .navigation .tab {
+  padding: 7px 0px 7px 0px;
+  margin: 30px 10px 40px 10px;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+  background-color: rgba(232, 230, 230, 0.17);
+  border: #999997 1px solid;
+  border-radius: 10px;
+}
+body .navigation .profile {
+  margin: 30px -50px 30px 100px;
+}
+body .navigation .profile img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+/*# sourceMappingURL=main.css.map */

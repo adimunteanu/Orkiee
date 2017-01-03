@@ -1,0 +1,9 @@
+F:\GIT Projects\Orkiee\Orkiee\bin\Orkiee.dll.config
+F:\GIT Projects\Orkiee\Orkiee\bin\Orkiee.dll
+F:\GIT Projects\Orkiee\Orkiee\bin\Orkiee.pdb
+F:\GIT Projects\Orkiee\Orkiee\bin\Orkiee.xml
+F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.Resources.resources
+F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.vbproj.GenerateResource.Cache
+F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.dll
+F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.xml
+F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.pdb
