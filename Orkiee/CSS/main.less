@@ -13,6 +13,7 @@
     }
     .navigation{
         margin:0px;
+        padding:0px;
         background-color:black;
         .logo{
             margin-top:30px;
@@ -34,7 +35,7 @@
         }
         .tab{
             padding:7px 0px 7px 0px;
-            margin:30px 10px 40px 10px;
+            margin:30px 10px 40px 0px;
             color:white;
             text-align:center;
             font-size:23px;
@@ -58,6 +59,40 @@
     .sidebar{
         background-color:rgba(232, 230, 230, 1);
         height:100vh;
-
+        color:#999997;
+    }
+    .content{
+        height:100vh;
+        .content-header{
+            height:63px;
+            .projectheader{
+                font-size:20px;
+                color:black;
+            }
+            .searchbar{
+                span{
+                    margin:5px;
+                    font-size:20px;
+                }
+                margin-top:20px;
+                height:40px; 
+            }
+            .fill{
+                height:63px;
+            }
+            .new-project-btn{
+                margin-top:20px;
+            }
+        }
+        .projects-content{
+            .project{
+                border-radius:5px;
+                margin-left:5px;
+                margin-right:5px;
+                height:230px;
+                box-shadow:0px 5px 18px 3px rgba(0,0,0,0.37);
+            }
+            height:100vh;
+        }
     }
 }
