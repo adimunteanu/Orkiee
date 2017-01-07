@@ -1,34 +1,38 @@
 ﻿body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2f2f2;
+  background-color: white;
+  overflow: hidden;
 }
 body .inline {
   display: inline-block;
 }
-body .right {
+body .rightside {
   float: right;
 }
-body .left {
+body .leftside {
   float: left;
 }
 body .navigation {
+  margin: 0px;
   background-color: black;
-  height: 120px;
 }
 body .navigation .logo {
-  margin-left: 40px;
-  padding: 20px;
+  margin-top: 30px;
+  padding: 0px;
 }
 body .navigation .logo img {
+  margin-left: 30px;
   height: 66px;
   width: 128px;
 }
 body .navigation .home {
-  margin-left: -50px;
+  margin-top: 30px;
+  padding: 0px;
   color: white;
   font-size: 40px;
-  padding: 32px;
-  margin-right: 100px;
+}
+body .navigation .home span {
+  margin: 0px 0px 0px 40px;
 }
 body .navigation .tab {
   padding: 7px 0px 7px 0px;
@@ -41,12 +45,19 @@ body .navigation .tab {
   border-radius: 10px;
 }
 body .navigation .profile {
-  margin: 30px -50px 30px 100px;
+  padding: 0px;
+  margin-top: 30px;
 }
 body .navigation .profile img {
+  float: right;
   height: 50px;
   width: 50px;
   border-radius: 100%;
   border: 1px solid white;
+  margin-right: 40px;
+}
+body .sidebar {
+  background-color: #e8e6e6;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

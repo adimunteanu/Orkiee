@@ -7,3 +7,4 @@ F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.vbproj.GenerateResource.Cache
 F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.dll
 F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.xml
 F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.pdb
+F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.vbprojResolveAssemblyReference.cache
