@@ -99,11 +99,11 @@ body .content .projects-content .project {
   box-shadow: 0px 5px 18px 3px rgba(0, 0, 0, 0.37);
   padding: 20px;
 }
-body .content .projects-content .project #project-name {
+body .content .projects-content .project .project-name {
   margin: 0px;
   color: #3D9BE9;
 }
-body .content .projects-content .project #project-procent {
+body .content .projects-content .project .project-procent {
   color: #47BF3B;
   margin: 0px;
   font-weight: bold;
