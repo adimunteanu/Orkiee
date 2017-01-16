@@ -3,12 +3,20 @@
 <head>
     <title></title>
     <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/knockout-3.4.1.js"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/main.js"></script>
+    <style>
+        .warning{
+            background-color:red;
+            width:100px;
+            height:100px;
+        }
+    </style>
 </head>
 <body>
-    <div style="display:inline-block; width:100px; height:100px; background-color:red;"></div>
+    <div data-bind="css: {warning: currentProfit()<0}"></div>
     <a href="index.html">Go back</a>
 </body>
 </html>

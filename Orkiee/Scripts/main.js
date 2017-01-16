@@ -43,3 +43,11 @@
         time_started.addClass("project-info");
     });
 });
+
+$(document).ready(function () {
+    var viewModel = {
+        currentProfit:ko.observable(1500)
+    };
+    viewModel.currentProfit(-50);
+    ko.applyBindings(viewModel);
+});
