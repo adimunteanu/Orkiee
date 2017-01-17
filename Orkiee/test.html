@@ -7,16 +7,40 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/main.js"></script>
-    <style>
-        .warning{
-            background-color:red;
-            width:100px;
-            height:100px;
-        }
-    </style>
+    <script>
+        $(document).ready(function(){
+            function AppViewModel() {
+                var self = this;
+
+                self.people = ko.observableArray([
+                    { name: 'Bert' },
+                    { name: 'Charles' },
+                    { name: 'Denise' }
+                ]);
+
+                self.addPerson = function () {
+                    self.people.push({ name: "New at " + new Date() });
+                };
+
+                self.removePerson = function () {
+                    self.people.remove(this);
+                }
+            }
+
+            ko.applyBindings(new AppViewModel());
+        });
+    </script>
 </head>
 <body>
-    <div data-bind="css: {warning: currentProfit()<0}"></div>
+    <h4>People</h4>
+    <ul data-bind="foreach: people">
+        <li>
+            Name at position <span data-bind="text: $index"> </span>:
+            <span data-bind="text: name"> </span>
+            <a href="#" data-bind="click: $parent.removePerson">Remove</a>
+        </li>
+    </ul>
+    <button data-bind="click: addPerson">Add</button>
     <a href="index.html">Go back</a>
 </body>
 </html>
