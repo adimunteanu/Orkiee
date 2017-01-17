@@ -42,5 +42,18 @@
         project.next().append(time_started);
         time_started.addClass("project-info");
     });
+    function AppViewModel() {
+        var self = this;
+
+        self.projects = ko.observableArray();
+
+        self.addProject = function () {
+            self.projects.push({ name: "Project" });
+        };
+
+
+    }
+
+    ko.applyBindings(new AppViewModel());
 });
 
