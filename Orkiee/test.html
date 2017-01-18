@@ -11,13 +11,11 @@
     <h4>People</h4>
     <div data-bind="foreach: projects">
         <div class="inline project">
-            <span data-bind="text: name"> </span>
-            <span data-bind="text: $index"> </span>:
-
-
+            <span class="project-name" data-bind="text: name"> </span>
+            <span class="project-name" data-bind="text: $index"> </span>
+            <span class="project-procent inline rightside" data-bind="text: procent"></span>
         </div>
     </div>
-    <div class="project"></div>
     <button data-bind="click: addProject">Add</button>
 
 

@@ -2,11 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Orkiee</title>
-    <script src="Scripts/jquery-1.9.1.js"></script>
+    
     <link href="Content/bootstrap.css" rel="stylesheet" />
-    <script src="Scripts/bootstrap.js"></script>
     <link href="CSS/main.css" rel="stylesheet" />
-    <script src="Scripts/main.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -58,43 +57,26 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="button">Save changes</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal" data-bind="click: addProject">Save changes</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="projects-content">
-                    <div class="project inline" >
-                        <h4 class="inline project-name">Project name</h4>
-                        <h4 class="inline rightside project-procent">66%</h4>
-                        <div class="completion col-lg-12">
-                            <div class="complete col-lg-8"></div>
-                            <div class="not-complete col-lg-4"></div>
-                        </div>
-                        <h4 class="project-info">Estimated end:</h4>
-                        <h4 class="project-info">Started:</h4>
-                        <h4 class="project-info">Tasks:</h4>
-                        <h4 class="project-info">Delay:</h4>
-                        <h4 class="project-info">Time started:</h4>
-                    </div>
-                    <div class="project inline" id="2nd-project">
-                        <h4 class="inline project-name">Project name</h4>
-                        <h4 class="inline rightside project-procent">100%</h4>
-                        <div class="completion col-lg-12">
-                            <div class="complete col-lg-12"></div>
-                            <div class="not-complete "></div>
-                        </div>
-                        <h4 class="project-info">Estimated end:</h4>
-                        <h4 class="project-info">Started:</h4>
-                        <h4 class="project-info">Tasks:</h4>
-                        <h4 class="project-info">Delay:</h4>
-                        <h4 class="project-info">Time started:</h4>
+                <div class="projects-content" data-bind="foreach: projects">
+                    <div class="project inline">
+                        <span class="project-name" data-bind="text: name"> </span>
+                        <span class="project-name" data-bind="text: $index"> </span>
+                        <span class="project-procent inline rightside" data-bind="text: procent"></span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/knockout-3.4.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/main.js"></script>
 </body>
 </html>
