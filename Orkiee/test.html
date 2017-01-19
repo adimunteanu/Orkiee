@@ -2,13 +2,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-    <script src="Scripts/jquery-1.9.1.js"></script>
+
+    <link href="CSS/main.css" rel="stylesheet" />
     <link href="Content/bootstrap.css" rel="stylesheet" />
-    <script src="Scripts/bootstrap.js"></script>
-    <script src="Scripts/main.js"></script>
+    
 </head>
 <body>
-    <div style="display:inline-block; width:100px; height:100px; background-color:red;"></div>
+    <h4>People</h4>
+    <div data-bind="foreach: projects">
+        <div class="inline project">
+            <span class="project-name" data-bind="text: name"> </span>
+            <span class="project-name" data-bind="text: $index"> </span>
+            <span class="project-procent inline rightside" data-bind="text: procent"></span>
+        </div>
+    </div>
+    <button data-bind="click: addProject">Add</button>
+
+
     <a href="index.html">Go back</a>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/knockout-3.4.1.js"></script>
+    <script src="Scripts/main.js"></script>
 </body>
 </html>
