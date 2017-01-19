@@ -53,6 +53,7 @@
                                         <h4 class="modal-title">New Project</h4>
                                     </div>
                                     <div class="modal-body">
+                                        <input data-bind="textInput: name" placeholder="Name" />
                                         <p>Click save changes to add a new project</p>
                                     </div>
                                     <div class="modal-footer">
@@ -67,7 +68,6 @@
                 <div class="projects-content" data-bind="foreach: projects">
                     <div class="project inline">
                         <span class="project-name" data-bind="text: name"> </span>
-                        <span class="project-name" data-bind="text: $index"> </span>
                         <span class="project-procent inline rightside" data-bind="text: procent"></span>
                     </div>
                 </div>

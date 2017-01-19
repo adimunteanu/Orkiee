@@ -10,7 +10,7 @@ $(document).ready(function () {
         self.projects = ko.observableArray();
 
         self.addProject = function () {
-            var new_project = new project({name: "Project", procent: 0});
+            var new_project = new project({name:"Project",procent:0+"%"});
             self.projects.push(new_project);
         };
 
