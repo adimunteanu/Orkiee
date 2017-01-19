@@ -5,10 +5,11 @@
         self.projects = ko.observableArray();
 
         self.addProject = function () {
-            var object = {
-                name: 'Project',
-                procent:'0%'
-            }
+            var object = ko.observable({
+                name: 'New Project',
+                procent: '0%'
+            });
+            object.name = ko.observable();
             self.projects.push(object);
         };
 

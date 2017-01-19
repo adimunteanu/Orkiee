@@ -12,12 +12,12 @@
     <div data-bind="foreach: projects">
         <div class="inline project">
             <span class="project-name" data-bind="text: name"> </span>
-            <span class="project-name" data-bind="text: $index"> </span>
+            
             <span class="project-procent inline rightside" data-bind="text: procent"></span>
         </div>
     </div>
     <button data-bind="click: addProject">Add</button>
-
+    <input data-bind="value: name" placeholder="Name" />
 
     <a href="index.html">Go back</a>
     <script src="Scripts/bootstrap.js"></script>
