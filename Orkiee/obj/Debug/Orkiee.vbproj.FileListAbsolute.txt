@@ -8,3 +8,13 @@ F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.dll
 F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.xml
 F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.pdb
 F:\GIT Projects\Orkiee\Orkiee\obj\Debug\Orkiee.vbprojResolveAssemblyReference.cache
+E:\Adi\Orkiee\Orkiee\bin\Orkiee.dll.config
+E:\Adi\Orkiee\Orkiee\bin\Orkiee.dll
+E:\Adi\Orkiee\Orkiee\bin\Orkiee.pdb
+E:\Adi\Orkiee\Orkiee\bin\Orkiee.xml
+E:\Adi\Orkiee\Orkiee\obj\Debug\Orkiee.vbprojResolveAssemblyReference.cache
+E:\Adi\Orkiee\Orkiee\obj\Debug\Orkiee.Resources.resources
+E:\Adi\Orkiee\Orkiee\obj\Debug\Orkiee.vbproj.GenerateResource.Cache
+E:\Adi\Orkiee\Orkiee\obj\Debug\Orkiee.dll
+E:\Adi\Orkiee\Orkiee\obj\Debug\Orkiee.xml
+E:\Adi\Orkiee\Orkiee\obj\Debug\Orkiee.pdb
