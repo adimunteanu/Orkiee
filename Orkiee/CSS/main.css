@@ -1,49 +1,4 @@
-﻿body .project {
-  border-radius: 10px;
-  margin-left: 40px;
-  margin-top: 30px;
-  height: 230px;
-  box-shadow: 0px 5px 18px 3px rgba(0, 0, 0, 0.37);
-  padding: 20px;
-  width: 433px;
-}
-body .project .project-name {
-  margin: 0px;
-  color: #3D9BE9;
-  font-size: 20px;
-  font-weight: bold;
-}
-body .project .project-procent {
-  color: #47BF3B;
-  margin: 0px;
-  font-size: 20px;
-  font-weight: bold;
-}
-body .project .completion {
-  padding: 0px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-body .project .completion .not-complete {
-  margin-top: 7px;
-  height: 5px;
-  background-color: #e8e6e6;
-  border-radius: 5px;
-  padding: 0px;
-}
-body .project .completion .complete {
-  margin-top: 7px;
-  height: 5px;
-  border-radius: 5px;
-  padding: 0px;
-  background-color: #47Bf3B;
-}
-body .project .project-info {
-  color: #C7C7C7;
-  margin-bottom: 8px;
-  margin-top: 0px;
-}
-body {
+﻿body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
   overflow: hidden;
@@ -147,12 +102,15 @@ body .content .projects-content .project {
   width: 433px;
 }
 body .content .projects-content .project .project-name {
+  font-size: 20px;
+  font-weight: bold;
   margin: 0px;
   color: #3D9BE9;
 }
 body .content .projects-content .project .project-procent {
   color: #47BF3B;
   margin: 0px;
+  font-size: 20px;
   font-weight: bold;
 }
 body .content .projects-content .project .completion {

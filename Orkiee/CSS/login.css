@@ -1,0 +1,65 @@
+﻿body {
+  background-color: #6563c7;
+  font-family: Lato, raleway, sans-serif;
+}
+body .inline_block {
+  display: inline-block;
+}
+body .font_2 {
+  color: #97DEFF;
+  font-size: 18px;
+  font-weight: bold;
+}
+body .main_div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  height: 525px;
+  width: 450px;
+}
+body .main_div .logo_div {
+  padding-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+body .main_div .logo_div img {
+  height: 66px;
+  width: 128px;
+}
+body .main_div .nav_actions {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+body .main_div .form_div {
+  box-shadow: 0px 5px 18px 3px rgba(0, 0, 0, 0.37);
+  height: 272px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+body .main_div .form_div form .username_div {
+  margin-top: 25px;
+}
+body .main_div .form_div form .username_div input {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .main_div .form_div form .password_div {
+  margin-top: 20px;
+}
+body .main_div .form_div form .password_div input {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .main_div .form_div form .sign_in {
+  margin-top: 20px;
+}
+body .main_div .form_div form .sign_in a {
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 400px;
+}
+/*# sourceMappingURL=login.css.map */
