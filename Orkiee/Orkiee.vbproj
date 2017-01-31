@@ -132,6 +132,12 @@
     <Content Include="Scripts\knockout-3.4.1.debug.js" />
     <Content Include="Scripts\knockout-3.4.1.js" />
     <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\test.js">
+      <DependentUpon>test.coffee</DependentUpon>
+    </Content>
+    <Content Include="Scripts\test.min.js">
+      <DependentUpon>test.js</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +184,13 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Scripts\test.coffee" />
+    <Content Include="Scripts\test.js.map">
+      <DependentUpon>test.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\test.min.js.map">
+      <DependentUpon>test.min.js</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -3,18 +3,16 @@
 <head>
     <title></title>
 
-    <link href="CSS/main.css" rel="stylesheet" />
+    <link href="CSS/test.css" rel="stylesheet" />
     <link href="Content/bootstrap.css" rel="stylesheet" />
     
 </head>
 <body>
     <h4>People</h4>
     <div data-bind="foreach: projects">
-        <div class="project">
-            <div class="inline">
+        <div class="project inline">
                 <span class="project-name" data-bind="text: name"> </span>
-                <span class="project-procent inline rightside" data-bind="text: procent"></span>
-            </div>
+                <span class="project-procent inline rightside" data-bind="text: percent"></span>
         </div>
     </div>
     <button data-bind="click: addProject">Add</button>
@@ -30,7 +28,7 @@
                     <h4 class="modal-title">New Project</h4>
                 </div>
                 <div class="modal-body">
-                    <input data-bind="value: new_title" placeholder="Name" />
+                    <input data-bind="value: new_title" placeholder="Name" autofocus/>
                     <p>Click save changes to add a new project</p>
                 </div>
                 <div class="modal-footer">
@@ -44,6 +42,6 @@
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/knockout-3.4.1.js"></script>
-    <script src="Scripts/main.js"></script>
+    <script src="Scripts/test.js"></script>
 </body>
 </html>

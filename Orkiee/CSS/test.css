@@ -1,4 +1,10 @@
-﻿body .project {
+﻿body .rightside {
+  float: right;
+}
+body .inline {
+  display: inline-block;
+}
+body .project {
   border-radius: 10px;
   margin-left: 40px;
   margin-top: 30px;
