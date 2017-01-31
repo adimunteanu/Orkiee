@@ -106,6 +106,24 @@
     </Content>
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
+    <Content Include="jquery-ui-1.12.1\AUTHORS.txt" />
+    <Content Include="jquery-ui-1.12.1\external\jquery\jquery.js" />
+    <Content Include="jquery-ui-1.12.1\images\ui-icons_444444_256x240.png" />
+    <Content Include="jquery-ui-1.12.1\images\ui-icons_555555_256x240.png" />
+    <Content Include="jquery-ui-1.12.1\images\ui-icons_777620_256x240.png" />
+    <Content Include="jquery-ui-1.12.1\images\ui-icons_777777_256x240.png" />
+    <Content Include="jquery-ui-1.12.1\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="jquery-ui-1.12.1\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jquery-ui-1.12.1\index.html" />
+    <Content Include="jquery-ui-1.12.1\jquery-ui.css" />
+    <Content Include="jquery-ui-1.12.1\jquery-ui.js" />
+    <Content Include="jquery-ui-1.12.1\jquery-ui.min.css" />
+    <Content Include="jquery-ui-1.12.1\jquery-ui.min.js" />
+    <Content Include="jquery-ui-1.12.1\jquery-ui.structure.css" />
+    <Content Include="jquery-ui-1.12.1\jquery-ui.structure.min.css" />
+    <Content Include="jquery-ui-1.12.1\jquery-ui.theme.css" />
+    <Content Include="jquery-ui-1.12.1\jquery-ui.theme.min.css" />
+    <Content Include="jquery-ui-1.12.1\LICENSE.txt" />
     <Content Include="login.html" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -124,7 +142,10 @@
     <Content Include="CSS\login.css.map">
       <DependentUpon>login.css</DependentUpon>
     </Content>
+    <Content Include="jquery-ui-1.12.1\package.json" />
     <None Include="Scripts\jquery-1.9.1-vsdoc.js" />
+    <Content Include="pictures\4605386.jpg" />
+    <Content Include="pictures\b70269_9ba26090194541f6aa7e0c9e199f8558-mv2 %281%29.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -138,6 +159,7 @@
     <Content Include="Scripts\test.min.js">
       <DependentUpon>test.js</DependentUpon>
     </Content>
+    <Content Include="test.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

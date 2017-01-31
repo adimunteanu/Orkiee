@@ -1,6 +1,9 @@
 ﻿body .rightside {
   float: right;
 }
+body #slider {
+  width: 300px;
+}
 body .inline {
   display: inline-block;
 }
@@ -12,6 +15,9 @@ body .project {
   box-shadow: 0px 5px 18px 3px rgba(0, 0, 0, 0.37);
   padding: 20px;
   width: 433px;
+}
+body .project #slider {
+  width: 300px;
 }
 body .project .project-name {
   margin: 0px;

@@ -48,6 +48,21 @@
     return ko.applyBindings(my_view);
   };
 
+  $(function() {
+    var slider_properties;
+    slider_properties = {
+      range: "min",
+      min: 0,
+      max: 100,
+      value: 60,
+      slide: function(event, ui) {
+        return $("#amount").val(ui.value);
+      }
+    };
+    $("#slider").slider(slider_properties);
+    return $("#amount").val($("#slider").slider("value"));
+  });
+
 }).call(this);
 
 //# sourceMappingURL=test.js.map

@@ -29,3 +29,17 @@ window.myview  = => new projectsView
 window.onload = ->
     window.my_view = new myview()
     ko.applyBindings(my_view)
+
+$ ->
+    slider_properties={
+        range : "min"
+        min: 0
+        max: 100
+        value: 60
+        slide: (event,ui)->
+            $("#amount").val(ui.value)
+    }
+    $("#slider").slider(slider_properties)
+    $("#amount").val( $("#slider").slider("value"))
+    
+        
