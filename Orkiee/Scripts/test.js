@@ -1,18 +1,15 @@
 ﻿(function() {
-  var SimpleListModel;
+  var AppViewModel;
 
-  SimpleListModel = function(items) {
-    this.items = ko.observableArray(items);
-    this.itemToAdd = ko.observable('');
-    this.addItem = (function() {
-      if (this.itemsToAdd !== "") {
-        this.items.push(this.itemToAdd());
-        this.itemToAdd("");
-      }
-    }).bind(this);
+  AppViewModel = function() {
+    this.firstName = ko.observable("Bob");
+    this.lastName = ko.observable("Smith");
+    this.fullName = ko.computed((function() {
+      return this.firstName() + " " + this.lastName();
+    }), this);
   };
 
-  ko.applyBindings(new SimpleListModel(["Alpha", "Beta", "Gamma"]));
+  ko.applyBindings(AppViewModel);
 
 }).call(this);
 

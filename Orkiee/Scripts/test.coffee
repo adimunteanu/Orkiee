@@ -1,16 +1,10 @@
 ﻿# CoffeeScript
-SimpleListModel=(items)->
-    @items=ko.observableArray(items)
-    @itemToAdd=ko.observable ('')
-    @addItem=(->
-        if @itemsToAdd!=""
-            @items.push @itemToAdd()
-            @itemToAdd ""
-            return
-    ).bind(this)
+AppViewModel=->
+    @firstName= ko.observable "Bob"
+    @lastName= ko.observable "Smith"
+    
+    @fullName=ko.computed((->
+        @firstName() + " " + @lastName()
+    ),this)
     return
-ko.applyBindings new SimpleListModel([
-    "Alpha"
-    "Beta"
-    "Gamma"
-])
+ko.applyBindings(AppViewModel)

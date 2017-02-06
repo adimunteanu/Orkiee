@@ -8,13 +8,7 @@
     
 </head>
 <body>
-    <form data-bind="submit: addItem">
-        New item:
-        <input data-bind='value: itemToAdd, valueUpdate: "afterkeydown"' />
-        <button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
-        <p>Your items:</p>
-        <select multiple="multiple" width="50" data-bind="options: items"> </select>
-    </form>
+    The name is <span data-bind="text: fullName"></span>
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
     <script src="Scripts/bootstrap.js"></script>
