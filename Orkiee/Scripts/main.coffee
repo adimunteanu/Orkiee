@@ -1,4 +1,5 @@
 ﻿# CoffeeScript
+# CoffeeScript
 class project
     constructor: (data) ->
         @id = ko.observable data.id 
@@ -53,4 +54,3 @@ window.onload = ->
 
 
     
-        

@@ -5,14 +5,14 @@
     
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="CSS/main.css" rel="stylesheet" />
-    
+    <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="navigation col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="logo col-lg-2 col-md-2 col-sm-2 inline">
-                    <img src="pictures/b70269_9ba26090194541f6aa7e0c9e199f8558-mv2 (1).png" />
+                    <img class="img-responsive" src="pictures/b70269_9ba26090194541f6aa7e0c9e199f8558-mv2 (1).png" />
                     <a href="test.html" style="float:right">go to test page</a>
                     <a href="login.html">go to login page</a>
                 </div>
@@ -29,6 +29,8 @@
                     <img src="pictures/4605386.jpg" />
                 </div>
             </div>
+        </div>
+        <div class="row">
             <div class="sidebar col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <h3>Channels</h3>
                 <h3>Chat</h3>
@@ -55,8 +57,8 @@
                                         <h4 class="modal-title">New Project</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <input data-bind="value: new_title" placeholder="Name" />
-                                        <p>Click save changes to add a new project</p>
+                                        <input data-bind="value: new_title" placeholder="Name" autofocus />
+                                        <p style="margin-top:20px">Click save changes to add a new project</p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -71,14 +73,16 @@
                     <div class="project inline">
                         <span class="project-name" data-bind="text: name"> </span>
                         <span class="project-procent inline rightside" data-bind="text: percent"></span>
+                        <div data-bind="css: project_class"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
     <script src="Scripts/knockout-3.4.1.js"></script>
     <script src="Scripts/bootstrap.js"></script>
-    <script src="Scripts/test.js"></script>
+    <script src="Scripts/main.js"></script>
 </body>
 </html>

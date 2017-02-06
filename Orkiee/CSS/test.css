@@ -1,7 +1,7 @@
 ﻿body .rightside {
   float: right;
 }
-body #slider {
+body .slider {
   width: 300px;
 }
 body .inline {

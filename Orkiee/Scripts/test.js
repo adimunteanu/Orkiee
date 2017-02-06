@@ -3,9 +3,27 @@
 
   project = (function() {
     function project(data) {
-      console.log(data);
+      this.id = ko.observable(data.id);
       this.name = ko.observable(data.name || 'blank');
       this.percent = ko.observable(data.percent || '0%');
+      this.project_class = ko.observable("slider_" + this.id().toString());
+      this.createSlider = (function(_this) {
+        return function() {
+          var div, slider_properties;
+          slider_properties = {
+            range: "min",
+            min: 0,
+            max: 100,
+            value: 0,
+            slide: function(event, ui) {
+              return _this.percent(ui.value);
+            }
+          };
+          div = $(".slider_" + _this.id());
+          console.log(div);
+          return div.slider(slider_properties);
+        };
+      })(this);
     }
 
     return project;
@@ -14,19 +32,31 @@
 
   projectsView = (function() {
     function projectsView() {
+      var slider_properties;
+      slider_properties = {
+        range: "min",
+        min: 0,
+        max: 100,
+        value: 0,
+        slide: function(event, ui) {
+          return $(".amount").val(ui.value);
+        }
+      };
+      $(".slider").slider(slider_properties);
+      $(".amount").val($(".slider").slider("value"));
       this.projects = ko.observableArray([]);
       this.new_title = ko.observable('');
       this.addProject = (function(_this) {
         return function() {
           var data, new_project;
-          console.log(_this.new_title());
           data = {
+            id: _this.projects.length,
             name: _this.new_title(),
             percent: '0%'
           };
-          console.log(data);
           new_project = new project(data);
-          return _this.projects.push(new_project);
+          _this.projects.push(new_project);
+          return setTimeout(new_project.createSlider, 200);
         };
       })(this);
       this.username = ko.observable('');
@@ -47,21 +77,6 @@
     window.my_view = new myview();
     return ko.applyBindings(my_view);
   };
-
-  $(function() {
-    var slider_properties;
-    slider_properties = {
-      range: "min",
-      min: 0,
-      max: 100,
-      value: 60,
-      slide: function(event, ui) {
-        return $("#amount").val(ui.value);
-      }
-    };
-    $("#slider").slider(slider_properties);
-    return $("#amount").val($("#slider").slider("value"));
-  });
 
 }).call(this);
 

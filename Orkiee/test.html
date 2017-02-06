@@ -10,8 +10,9 @@
     <h4>People</h4>
     <div data-bind="foreach: projects">
         <div class="project inline">
-                <span class="project-name" data-bind="text: name"> </span>
-                <span class="project-procent inline rightside" data-bind="text: percent"></span>
+            <span class="project-name" data-bind="text: name"></span>
+            <span class="project-procent inline rightside" data-bind="text: percent"></span>
+            <div data-bind="css: project_class"></div>
         </div>
     </div>
     <button data-bind="click: addProject">Add</button>
@@ -27,7 +28,7 @@
                     <h4 class="modal-title">New Project</h4>
                 </div>
                 <div class="modal-body">
-                    <input data-bind="value: new_title" placeholder="Name" autofocus/>
+                    <input data-bind="value: new_title" placeholder="Name" autofocus />
                     <p>Click save changes to add a new project</p>
                 </div>
                 <div class="modal-footer">
@@ -38,8 +39,6 @@
         </div>
     </div>
     <a href="index.html">Go back</a>
-    <div id="slider"></div>
-    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
     <script src="Scripts/bootstrap.js"></script>
