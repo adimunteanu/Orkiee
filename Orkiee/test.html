@@ -5,40 +5,16 @@
     <link href="CSS/test.css" rel="stylesheet" />
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" />
+    
 </head>
 <body>
-    <h4>People</h4>
-    <div data-bind="foreach: projects">
-        <div class="project inline">
-            <span class="project-name" data-bind="text: name"></span>
-            <span class="project-procent inline rightside" data-bind="text: percent"></span>
-            <div data-bind="css: project_class"></div>
-        </div>
-    </div>
-    <button data-bind="click: addProject">Add</button>
-
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">New Project</button>
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title">New Project</h4>
-                </div>
-                <div class="modal-body">
-                    <input data-bind="value: new_title" placeholder="Name" autofocus />
-                    <p>Click save changes to add a new project</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" data-bind="click: addProject">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a href="index.html">Go back</a>
+    <form data-bind="submit: addItem">
+        New item:
+        <input data-bind='value: itemToAdd, valueUpdate: "afterkeydown"' />
+        <button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
+        <p>Your items:</p>
+        <select multiple="multiple" width="50" data-bind="options: items"> </select>
+    </form>
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
     <script src="Scripts/bootstrap.js"></script>
