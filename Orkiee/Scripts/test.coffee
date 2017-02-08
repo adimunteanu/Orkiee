@@ -1,24 +1,16 @@
 ﻿# CoffeeScript
 MyViewModel= ->
-    @produce=[
-        'Apple'
-        'Banana'
-        'Celery'
-        'Corn'
-        'Orange'
-        'Spinach'
-    ]
-    @selectedProduce=ko.observableArray([
-        'Corn'
-        'Orange'
-    ])
-    @selectedAllProduce=ko.pureComputed(
-        read: ->
-            @selectedProduce().length == @produce.length
-        write:(value) ->
-            @selectedProduce if value then @produce.slice(0) else [] 
+    @acceptedNumericValue = ko.observable(123)
+    @lastInputWasValid = ko.observable(true)
+    @attemptedValue = ko.pureComputed(
+        read: @acceptedNumericValue
+        write: (value) ->
+            if isNaN(value)
+                @lastInputWasValid false
+            else
+                @lastInputWasValid true
+                @acceptedNumericValue value
             return
-        owner:this
-    )
+        owner: this)
     return
 ko.applyBindings new MyViewModel

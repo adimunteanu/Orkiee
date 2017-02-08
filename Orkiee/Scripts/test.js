@@ -2,14 +2,17 @@
   var MyViewModel;
 
   MyViewModel = function() {
-    this.produce = ['Apple', 'Banana', 'Celery', 'Corn', 'Orange', 'Spinach'];
-    this.selectedProduce = ko.observableArray(['Corn', 'Orange']);
-    this.selectedAllProduce = ko.pureComputed({
-      read: function() {
-        return this.selectedProduce().length === this.produce.length;
-      },
+    this.acceptedNumericValue = ko.observable(123);
+    this.lastInputWasValid = ko.observable(true);
+    this.attemptedValue = ko.pureComputed({
+      read: this.acceptedNumericValue,
       write: function(value) {
-        this.selectedProduce(value ? this.produce.slice(0) : []);
+        if (isNaN(value)) {
+          this.lastInputWasValid(false);
+        } else {
+          this.lastInputWasValid(true);
+          this.acceptedNumericValue(value);
+        }
       },
       owner: this
     });
