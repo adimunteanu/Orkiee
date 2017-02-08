@@ -1,17 +1,24 @@
 ﻿# CoffeeScript
 MyViewModel= ->
-    @firstName=ko.observable "Planet"
-    @lastName=ko.observable "Earth"
-    @fullName=ko.pureComputed(
+    @produce=[
+        'Apple'
+        'Banana'
+        'Celery'
+        'Corn'
+        'Orange'
+        'Spinach'
+    ]
+    @selectedProduce=ko.observableArray([
+        'Corn'
+        'Orange'
+    ])
+    @selectedAllProduce=ko.pureComputed(
         read: ->
-            @firstName() + ' ' + @lastName()
-        write:(value)->
-            lastSpacePos= value.lastIndexOf ' '
-            if lastSpacePos > 0
-                @firstName(value.substring(0,lastSpacePos))
-                @lastName(value.substring(lastSpacePos+1))
-                return
-        owner : @
+            @selectedProduce().length == @produce.length
+        write:(value) ->
+            @selectedProduce if value then @produce.slice(0) else [] 
+            return
+        owner:this
     )
     return
-ko.applyBindings (new MyViewModel)
+ko.applyBindings new MyViewModel

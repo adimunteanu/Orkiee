@@ -8,9 +8,15 @@
     
 </head>
 <body>
-    <div>First name: <span data-bind="text: firstName"></span></div>
-    <div>Last name: <span data-bind="text: lastName"></span></div>
-    <div>Hello, <input data-bind="textinput: fullName" /></div>
+    <div style="border-bottom:1px solid black;color:red;font-size:20px;">
+        <input type="checkbox" data-bind="checked: selectedAllProduce" title="Select all/none" />Produce
+    </div>
+    <div data-bind="foreach: produce">
+        <label>
+            <input type="checkbox" data-bind="checkedValue: $data, checked: $parent.selectedProduce" />
+            <span data-bind="text: $data"></span>
+        </label>
+    </div>
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
     <script src="Scripts/bootstrap.js"></script>

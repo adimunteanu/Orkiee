@@ -2,19 +2,14 @@
   var MyViewModel;
 
   MyViewModel = function() {
-    this.firstName = ko.observable("Planet");
-    this.lastName = ko.observable("Earth");
-    this.fullName = ko.pureComputed({
+    this.produce = ['Apple', 'Banana', 'Celery', 'Corn', 'Orange', 'Spinach'];
+    this.selectedProduce = ko.observableArray(['Corn', 'Orange']);
+    this.selectedAllProduce = ko.pureComputed({
       read: function() {
-        return this.firstName() + ' ' + this.lastName();
+        return this.selectedProduce().length === this.produce.length;
       },
       write: function(value) {
-        var lastSpacePos;
-        lastSpacePos = value.lastIndexOf(' ');
-        if (lastSpacePos > 0) {
-          this.firstName(value.substring(0, lastSpacePos));
-          this.lastName(value.substring(lastSpacePos + 1));
-        }
+        this.selectedProduce(value ? this.produce.slice(0) : []);
       },
       owner: this
     });
